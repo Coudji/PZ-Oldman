@@ -1,0 +1,4 @@
+UI_FR = {
+    UI_trait_OldManElderly = "Vieillard",
+    UI_trait_OldManElderlyDesc = "Toute une vie de savoir-faire. Le corps est moins enthousiaste : commence avec des competences pratiques et une personnalite persistante bien particuliere.",
+}
