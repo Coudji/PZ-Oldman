@@ -7,9 +7,10 @@ dont les genoux ne sont pas d'accord.
 
 - trait maître **Vieillard / Senior Citizen** ;
 - savoir-faire de départ (cuisine, menuiserie, agriculture et premiers soins) ;
-- personnalité persistante tirée une seule fois par personnage ;
-- phobies data-driven des nains de jardin, flamants roses et asticots ;
-- surprise, stress de proximité, répliques et bruit réel avec cooldowns ;
+- personnalité persistante et migrable tirée une seule fois par personnage ;
+- phobies pondérées et data-driven, avec réglages locaux facultatifs ;
+- objets du monde filtrés par la visibilité vanilla et conteneurs fouillés ;
+- surprise, légère panique, stress, répliques traduites et bruit autoritaire côté serveur ;
 - configuration centralisée, sans patch global des classes vanilla.
 
 Le détail des choix d'API, des limites et de la feuille de route se trouve dans
@@ -17,15 +18,24 @@ Le détail des choix d'API, des limites et de la feuille de route se trouve dans
 
 ## Installation
 
-Copier `OldManMode` dans le dossier `Zomboid/mods`, puis activer **Old Man
-Mode**. Le dossier `common/` et son sous-dossier versionné `42/` suivent le
-format de mod de Build 42.
+Copier le dossier `OldManMode` dans `~/Zomboid/mods/` (Linux),
+`%UserProfile%/Zomboid/mods/` (Windows) ou le dossier `Zomboid/mods/`
+équivalent, puis activer **Old Man Mode**. Le manifeste chargé par Build 42 est
+alors `Zomboid/mods/OldManMode/42/mod.info`.
+
+Pour un paquet Workshop, le même dossier se place sous
+`Contents/mods/OldManMode/`. Le répertoire `common/` est réservé aux ressources
+réellement partagées entre plusieurs versions ; ce prototype exclusivement B42
+n'en crée pas.
 
 ## Développement
 
 Le prototype ne dépend d'aucune bibliothèque Lua tierce. Une vérification
-statique peut être lancée avec :
+**statique** peut être lancée avec :
 
 ```sh
 ./scripts/check.sh
 ```
+
+Cette commande ne lance pas Project Zomboid et ne constitue donc pas un test en
+jeu, en coop hébergée ou sur serveur dédié.

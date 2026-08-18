@@ -1,4 +1,0 @@
-UI_EN = {
-    UI_trait_OldManElderly = "Senior Citizen",
-    UI_trait_OldManElderlyDesc = "A lifetime of practical knowledge. The body is less enthusiastic: starts with broad everyday skills and a persistent, peculiar personality.",
-}
